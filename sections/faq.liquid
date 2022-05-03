@@ -1,0 +1,26 @@
+<h1 style = "text-align: center; font-family: sans-serif">{{section.settings.heading}}</h1>
+<h3 style = " font-family: sans-serif">{{section.settings.question1}}</h3>
+<p style = " font-family: sans-serif">  *  {{section.settings.answer1}}</p>
+{% schema %}
+{
+    "name":"customer questions",
+    "settings": [
+        {
+        "type":"text",
+        "label":"heading for faq",
+        "id":"heading"
+    },
+    {
+        "type":"text",
+        "label":"customer questions",
+        "id":"question1"
+    },
+    {
+        "type":"textarea",
+        "label":"first faq answer",
+        "id":"answer1"
+    }
+    
+    ]
+}
+{% endschema %}
